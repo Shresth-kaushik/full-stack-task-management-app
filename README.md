@@ -1,5 +1,4 @@
 # full-stack-task-management-app
-# TaskMaster - Task Management Application
 
 ## Project Description
 
