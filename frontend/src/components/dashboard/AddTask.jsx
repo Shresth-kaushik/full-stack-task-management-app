@@ -12,7 +12,7 @@ function AddTask() {
     e.preventDefault();
     try {
       await axios.post(
-        'http://localhost:5002/api/tasks',
+        'https://full-stack-task-management-app.onrender.com/api/tasks',
         { title, description },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
