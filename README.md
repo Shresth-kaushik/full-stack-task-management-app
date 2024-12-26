@@ -50,7 +50,8 @@ TaskMaster is a full-stack web application designed to help users efficiently ma
 
 <img width="1419" alt="Screenshot 2024-12-25 at 11 04 12 PM" src="https://github.com/user-attachments/assets/dc29c046-3619-477b-9503-ee13d3f25ad1" />
 
-<img width="1163" alt="Screenshot 2024-12-25 at 8 46 43 PM" src="https://github.com/user-attachments/assets/b8d2906c-1329-411c-b843-f820e48a1c8e" />
+![image](https://github.com/user-attachments/assets/43fdcf57-a1b1-402d-a974-c430519615da)
+
 
 <img width="1440" alt="Screenshot 2024-12-25 at 10 35 00 PM" src="https://github.com/user-attachments/assets/f4f62667-e50d-41d5-82be-766f46d403dd" />
 
