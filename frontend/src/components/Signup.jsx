@@ -31,7 +31,7 @@ function Signup() {
       setError('');
       setFieldErrors({});
       
-      const response = await axios.post('http://localhost:5002/api/auth/signup', formData);
+      const response = await axios.post('https://full-stack-task-management-app.onrender.com/api/auth/signup', formData);
       console.log('Signup successful:', response.data);
       navigate('/login');
     } catch (error) {
