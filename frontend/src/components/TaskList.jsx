@@ -16,7 +16,7 @@ function TaskList() {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:5002/api/tasks', {
+      const response = await axios.get('https://full-stack-task-management-app.onrender.com/api/tasks', {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       setTasks(response.data);
@@ -27,7 +27,7 @@ function TaskList() {
 
   const deleteTask = async (id) => {
     try {
-      await axios.delete(`http://localhost:5002/api/tasks/${id}`, {
+      await axios.delete(`https://full-stack-task-management-app.onrender.com/api/tasks/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       });
       fetchTasks();
