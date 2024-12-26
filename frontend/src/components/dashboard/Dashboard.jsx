@@ -26,7 +26,7 @@ function Dashboard() {
   const fetchTasks = async () => {
     try {
       setLoading(true);
-      const response = await axios.get('http://localhost:5002/api/tasks', {
+      const response = await axios.get('https://full-stack-task-management-app.onrender.com/api/tasks', {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         params: { search, status, page: currentPage, sortBy, sortOrder }
       });
@@ -52,7 +52,7 @@ function Dashboard() {
   const handleUpdate = async (taskId) => {
     try {
       await axios.put(
-        `http://localhost:5002/api/tasks/${taskId}`,
+        `https://full-stack-task-management-app.onrender.com/api/tasks/${taskId}`,
         editForm,
         {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
@@ -68,7 +68,7 @@ function Dashboard() {
   const handleDelete = async (taskId) => {
     if (window.confirm('Are you sure you want to delete this task?')) {
       try {
-        await axios.delete(`http://localhost:5002/api/tasks/${taskId}`, {
+        await axios.delete(`https://full-stack-task-management-app.onrender.com/api/tasks/${taskId}`, {
           headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
         });
         fetchTasks();
