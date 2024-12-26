@@ -11,7 +11,7 @@ function EditTaskForm({ task, onTaskUpdated, onCancel }) {
     if (!title.trim()) return;
 
     try {
-      await axios.put(`http://localhost:5002/api/tasks/${task._id}`,
+      await axios.put(`https://full-stack-task-management-app.onrender.com/api/tasks/${task._id}`,
         { title, description, status },
         { headers: { Authorization: `Bearer ${localStorage.getItem('token')}` } }
       );
